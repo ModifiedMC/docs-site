@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Contributing
+# Quickstart
 
 ModifiedMC is open source, so everyone is welcome to contribute!
 
