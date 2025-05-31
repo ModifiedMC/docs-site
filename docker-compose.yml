@@ -5,4 +5,4 @@ services:
       dockerfile: ./.devcontainer/Dockerfile
     volumes:
       - ./:/workspaces/docs-site
-    command: "sleep infinity"
+    command: "yarn start"
