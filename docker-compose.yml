@@ -1,0 +1,8 @@
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      - ./:/workspaces/docs-site
+    command: "sleep infinity"

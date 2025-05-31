@@ -1,0 +1,44 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+    "name": "ModifiedMC Documentation",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    // The 'service' property is the name of the service for the container that VS Code should
+    // use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+    "service": "docs",
+    // The optional 'workspaceFolder' property is the path VS Code should open by default when
+    // connected. This is typically a file mount in .devcontainer/docker-compose.yml
+    "workspaceFolder": "/workspaces/docs-site",
+    // Uncomment the next line if you want start specific services in your Docker Compose config.
+    "runServices": [
+        "docs"
+    ],
+    "remoteUser": "node",
+    "forwardPorts": [
+        3000
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveTimeout": 3000,
+                "editor.insertSpaces": true,
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "search.exclude": {
+                    "**/.yarn": true,
+                    "**/.pnp.*": true
+                },
+                "typescript.tsdk": ".yarn/sdks/typescript/lib",
+                "typescript.enablePromptUseWorkspaceTsdk": true
+            },
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "eamodio.gitlens",
+                "mikestead.dotenv",
+                "arcanis.vscode-zipfs"
+            ]
+        }
+    }
+}
