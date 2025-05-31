@@ -75,7 +75,7 @@ You will now be able to open up a local copy of the site in your browser at http
 
 ## Full Development
 
-If you want to be able to edit React templates and really take full advantage Docusaurus, you will likely need the full Node.js + react development environment setup. For that, you can set up the Node project however you feel most comfortable, but we recommend using [VSCode](https://code.visualstudio.com/) with a [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+If you want to be able to edit React templates and really take full advantage Docusaurus, you will likely need the full Node.js + react development environment setup. For that, you can set up the Node project however you feel most comfortable, but we recommend using [VSCode](https://code.visualstudio.com/) with [Docker](https://docs.docker.com/get-started/get-docker/) and a [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
 1. Install [VSCode](https://code.visualstudio.com/) + the [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 2. [Clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
