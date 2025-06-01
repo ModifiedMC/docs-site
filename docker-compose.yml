@@ -1,8 +1,8 @@
 services:
-  docs:
+  dev:
     build:
       context: .
       dockerfile: ./.devcontainer/Dockerfile
     volumes:
-      - ./:/workspaces/docs-site
+      - ./:/workspaces/modifiedmc.com
     command: "yarn start"

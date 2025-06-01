@@ -64,11 +64,11 @@ Once you have docker installed and the repository cloned, open up the repoistory
 ```bash
 $ docker compose up
 [+] Running 1/1
- ✔ Container docs-site-docs-1  Recreated       11.6s
- Attaching to docs-1
-docs-1  | [INFO] Starting the development server...
-docs-1  | [SUCCESS] Docusaurus website is running at: http://localhost:3000/
-docs-1  | [webpackbar] ℹ Compiling Client
+ ✔ Container modifiedmc.com-site-1  Recreated       11.6s
+ Attaching to site-1
+site-1  | [INFO] Starting the development server...
+site-1  | [SUCCESS] Docusaurus website is running at: http://localhost:3000/
+site-1  | [webpackbar] ℹ Compiling Client
 ```
 
 You will now be able to open up a local copy of the site in your browser at http://localhost:3000/

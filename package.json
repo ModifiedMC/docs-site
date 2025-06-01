@@ -5,7 +5,7 @@
     "description": "Docusaurus site for ModifiedMC mods and modpacks",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ModifiedMC/docs-site.git"
+        "url": "https://github.com/ModifiedMC/modifiedmc.com.git"
     },
     "packageManager": "yarn@4.9.1",
     "scripts": {

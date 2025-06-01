@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-site/',
+  baseUrl: '/modifiedmc.com/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ModifiedMC/docs-site/tree/main/',
+            'https://github.com/ModifiedMC/modifiedmc.com/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -74,7 +74,7 @@ const config: Config = {
           label: 'Development',
         },
         {
-          href: 'https://github.com/ModifiedMC/docs-site',
+          href: 'https://github.com/ModifiedMC/modifiedmc.com',
           label: 'GitHub',
           position: 'right',
         },
@@ -106,7 +106,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/ModifiedMC/docs-site',
+              href: 'https://github.com/ModifiedMC/modifiedmc.com',
             },
           ],
         },

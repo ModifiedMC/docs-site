@@ -12,8 +12,8 @@ RUN --mount=type=cache,mode=0755,id=apt-cache,target=/var/cache/apt,sharing=lock
     && npm update -g npm yarn \
     && mkdir -p /home/node/.yarn /home/node/.cache/node/corepack \
     && chown node:node /home/node/.yarn /home/node/.cache/node/corepack \
-    && mkdir -p /workspaces/docs-site \
-    && chown node:node /workspaces/docs-site
+    && mkdir -p /workspaces/modifiedmc.com \
+    && chown node:node /workspaces/modifiedmc.com
 
 
 # Ensure default `node` user has access to `sudo`
@@ -22,15 +22,15 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
 USER node
-COPY package.json yarn.lock /workspaces/docs-site/
-RUN cd /workspaces/docs-site \
+COPY package.json yarn.lock /workspaces/modifiedmc.com/
+RUN cd /workspaces/modifiedmc.com \
     && yarn install --immutable \
-    && rm /workspaces/docs-site/package.json /workspaces/docs-site/yarn.lock
+    && rm /workspaces/modifiedmc.com/package.json /workspaces/modifiedmc.com/yarn.lock
 
 COPY .devcontainer/bashrc /home/node/.bashrc
 COPY .devcontainer/bin /usr/local/bin
 
 # Set `DEVCONTAINER` environment variable to help with orientation
 ENV DEVCONTAINER=true
-WORKDIR /workspaces/docs-site
+WORKDIR /workspaces/modifiedmc.com
 ENTRYPOINT [ "yarn-entrypoint" ]
